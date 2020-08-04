@@ -1,4 +1,2 @@
 # MyInternship
 ^_____^
-- [ ] Sleep
-- [ ] Tonight
