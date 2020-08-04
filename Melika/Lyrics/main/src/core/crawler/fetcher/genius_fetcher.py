@@ -1,8 +1,11 @@
+# Standard Library
+from typing import Union
+
 # Site Packages
 from requests import Response, Request
 
 # Internal
-from Melika.Lyrics.src.core.fetcher.fetcher import Fetcher, Session
+from .fetcher import Fetcher, Session
 
 
 class GeniusFetcher(Fetcher):
@@ -16,21 +19,26 @@ class GeniusFetcher(Fetcher):
                  token: str):
         super().__init__(max_attempts, failed_sleep_time, timeout)
         self._token = token
+        self._init_session()
     
     def _init_session(self) -> None:
-        session = Session()
-        session.headers.update({'authorization': 'Bearer ' + self._token})
+        session: Session = Session()
+        session.headers = {
+            'application': 'MelikaLyrics',
+            'User-Agent': 'Mozilla',
+            'authorization': 'Bearer ' + self._token
+        }
         self.session = session
     
     def fetch_song(self, song_id: str) -> Response:
-        request = Request('GET', url=self.root_url + f'songs/{song_id}')
-        return self._fetch(request)
+        request = Request('GET', url=self.api_url + f'songs/{song_id}')
+        return self._get(request)
 
     def fetch_search_results(self, query: str) -> Response:
         request = Request('GET', url=self.website_url + 'search/multi', params={'q': query})
-        return self._fetch(request)
+        return self._get(request)
 
-    def fetch_artist_songs(self, artist_id: str, sort = 'title', per_page: int = 20, page: int = 1):
+    def fetch_artist_songs(self, artist_id: str, sort = 'title', per_page: int = 20, page: int = 1) -> Response:
         request = Request(
             'GET',
             url=self.api_url + f'artists/{artist_id}/songs',
@@ -40,4 +48,11 @@ class GeniusFetcher(Fetcher):
                 'page': page
             }
         )
-        return self._fetch(request)
+        return self._get(request)
+
+    def fetch_song_lyrics(self, url: str) -> Response:
+        request = Request(
+            'GET',
+             url = self.website_url + url
+        )
+        return self._get(request)

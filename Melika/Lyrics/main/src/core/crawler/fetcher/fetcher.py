@@ -28,13 +28,19 @@ class Fetcher(ABC):
         response: Response = self.session.send(request)
         if response.status_code == 200:
             return response
+        print(response.text)
         raise HTTPError('Bad Request!')
 
-    def _fetch(self, request: Request) -> Response:
-        prepared_request: PreparedRequest = request.prepare()
+    def _get(self, request: Request) -> Response:
+        request.params.update({'text_format': 'plain'})
         for attempt in range(self.max_attempts):
             try:
-                return self._send_request(prepared_request)
+                return self.session.request(
+                    'GET',
+                    request.url,
+                    timeout=self.timeout,
+                    params=request.params
+                )
             except Timeout:
                 time_sleep(self.failed_sleep_time)
             except ConnectionError:
