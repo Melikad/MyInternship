@@ -9,3 +9,12 @@ class Artist(SlotString):
     def __init__(self, id_: str, name: str):
         self.id = id_
         self.name = name
+
+    def __hash__(self):
+        return hash(self.id)
+
+    def __eq__(self, other: Artist):
+        return (
+            self.__class__ == other.__class__ and
+            self.id == other.id
+        )

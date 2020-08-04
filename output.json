@@ -1,0 +1,396 @@
+{
+    "meta": {
+        "status": 200
+    },
+    "response": {
+        "hits": [
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 5,
+                    "api_path": "/songs/3422526",
+                    "full_title": "​lovely by Billie Eilish & Khalid",
+                    "header_image_thumbnail_url": "https://images.genius.com/8d5aa35db17430b7b36b39b2ca48bde9.300x169x1.jpg",
+                    "header_image_url": "https://images.genius.com/8d5aa35db17430b7b36b39b2ca48bde9.1000x562x1.jpg",
+                    "id": 3422526,
+                    "lyrics_owner_id": 104344,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-and-khalid-lovely-lyrics",
+                    "pyongs_count": 304,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/578e20b49d1233d2520b4f2eefc0d2e1.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/578e20b49d1233d2520b4f2eefc0d2e1.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 6,
+                        "hot": false,
+                        "pageviews": 3527251
+                    },
+                    "title": "​lovely",
+                    "title_with_featured": "​lovely",
+                    "url": "https://genius.com/Billie-eilish-and-khalid-lovely-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/1444143",
+                        "header_image_url": "https://images.genius.com/3a198593f9df421870fcbcdf284275bf.495x495x1.jpg",
+                        "id": 1444143,
+                        "image_url": "https://images.genius.com/3a198593f9df421870fcbcdf284275bf.495x495x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": false,
+                        "name": "Billie Eilish & Khalid",
+                        "url": "https://genius.com/artists/Billie-eilish-and-khalid"
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 2,
+                    "api_path": "/songs/3484874",
+                    "full_title": "​when the party's over by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/96f138b15bcf220261502cd8c6f656aa.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/96f138b15bcf220261502cd8c6f656aa.1000x1000x1.jpg",
+                    "id": 3484874,
+                    "lyrics_owner_id": 5614516,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-when-the-partys-over-lyrics",
+                    "pyongs_count": 379,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/96f138b15bcf220261502cd8c6f656aa.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/96f138b15bcf220261502cd8c6f656aa.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 2,
+                        "hot": false,
+                        "pageviews": 3239626
+                    },
+                    "title": "​when the party’s over",
+                    "title_with_featured": "​when the party's over",
+                    "url": "https://genius.com/Billie-eilish-when-the-partys-over-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 7,
+                    "api_path": "/songs/5013279",
+                    "full_title": "​everything i wanted by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/a092ac87ff77c4e0b827bf916ca239bb.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/a092ac87ff77c4e0b827bf916ca239bb.1000x1000x1.jpg",
+                    "id": 5013279,
+                    "lyrics_owner_id": 1599419,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-everything-i-wanted-lyrics",
+                    "pyongs_count": 221,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/a092ac87ff77c4e0b827bf916ca239bb.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/a092ac87ff77c4e0b827bf916ca239bb.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 10,
+                        "hot": false,
+                        "pageviews": 2744843
+                    },
+                    "title": "​everything i wanted",
+                    "title_with_featured": "​everything i wanted",
+                    "url": "https://genius.com/Billie-eilish-everything-i-wanted-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 5,
+                    "api_path": "/songs/4271772",
+                    "full_title": "​bad guy by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.1000x1000x1.jpg",
+                    "id": 4271772,
+                    "lyrics_owner_id": 3195745,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-bad-guy-lyrics",
+                    "pyongs_count": 293,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 3,
+                        "hot": false,
+                        "pageviews": 2806415
+                    },
+                    "title": "​bad guy",
+                    "title_with_featured": "​bad guy",
+                    "url": "https://genius.com/Billie-eilish-bad-guy-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 9,
+                    "api_path": "/songs/3143252",
+                    "full_title": "​idontwannabeyouanymore by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/f8060b167e7c071e6d56d6e99eae89c4.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/f8060b167e7c071e6d56d6e99eae89c4.1000x1000x1.jpg",
+                    "id": 3143252,
+                    "lyrics_owner_id": 2567861,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-idontwannabeyouanymore-lyrics",
+                    "pyongs_count": 233,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/3fada30ae6c10f42675d2c4c4d5c6fa4.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/3fada30ae6c10f42675d2c4c4d5c6fa4.640x640x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 3,
+                        "hot": false,
+                        "pageviews": 2386864
+                    },
+                    "title": "​idontwannabeyouanymore",
+                    "title_with_featured": "​idontwannabeyouanymore",
+                    "url": "https://genius.com/Billie-eilish-idontwannabeyouanymore-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 7,
+                    "api_path": "/songs/4266880",
+                    "full_title": "​bury a friend by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.1000x1000x1.jpg",
+                    "id": 4266880,
+                    "lyrics_owner_id": 3355833,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-bury-a-friend-lyrics",
+                    "pyongs_count": 276,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "hot": false,
+                        "pageviews": 2305480
+                    },
+                    "title": "​bury a friend",
+                    "title_with_featured": "​bury a friend",
+                    "url": "https://genius.com/Billie-eilish-bury-a-friend-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 2,
+                    "api_path": "/songs/4186978",
+                    "full_title": "​i love you by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.1000x1000x1.jpg",
+                    "id": 4186978,
+                    "lyrics_owner_id": 3195745,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-i-love-you-lyrics",
+                    "pyongs_count": 171,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/340ad5b2b1163aa2333a8efc0815b84f.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 4,
+                        "hot": false,
+                        "pageviews": 1546641
+                    },
+                    "title": "​i love you",
+                    "title_with_featured": "​i love you",
+                    "url": "https://genius.com/Billie-eilish-i-love-you-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 3,
+                    "api_path": "/songs/5173169",
+                    "full_title": "No Time To Die by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/d2a5ee9af594606ec76273f563f3d882.300x150x1.png",
+                    "header_image_url": "https://images.genius.com/d2a5ee9af594606ec76273f563f3d882.1000x500x1.png",
+                    "id": 5173169,
+                    "lyrics_owner_id": 5748418,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-no-time-to-die-lyrics",
+                    "pyongs_count": 162,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/564f40f0f155de5346eb4a1aad425c0c.300x300x1.png",
+                    "song_art_image_url": "https://images.genius.com/564f40f0f155de5346eb4a1aad425c0c.1000x1000x1.png",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 2,
+                        "hot": false,
+                        "pageviews": 1449558
+                    },
+                    "title": "No Time To Die",
+                    "title_with_featured": "No Time To Die",
+                    "url": "https://genius.com/Billie-eilish-no-time-to-die-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 5,
+                    "api_path": "/songs/2403346",
+                    "full_title": "​​ocean eyes by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/f8060b167e7c071e6d56d6e99eae89c4.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/f8060b167e7c071e6d56d6e99eae89c4.1000x1000x1.jpg",
+                    "id": 2403346,
+                    "lyrics_owner_id": 104344,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-ocean-eyes-lyrics",
+                    "pyongs_count": 155,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/a0bd571a819d6c15f450632192dac147.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/a0bd571a819d6c15f450632192dac147.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "concurrents": 2,
+                        "hot": false,
+                        "pageviews": 1310908
+                    },
+                    "title": "​​ocean eyes",
+                    "title_with_featured": "​​ocean eyes",
+                    "url": "https://genius.com/Billie-eilish-ocean-eyes-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            },
+            {
+                "highlights": [],
+                "index": "song",
+                "type": "song",
+                "result": {
+                    "annotation_count": 10,
+                    "api_path": "/songs/3256574",
+                    "full_title": "​wish you were gay by Billie Eilish",
+                    "header_image_thumbnail_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.300x300x1.jpg",
+                    "header_image_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.1000x1000x1.jpg",
+                    "id": 3256574,
+                    "lyrics_owner_id": 4104782,
+                    "lyrics_state": "complete",
+                    "path": "/Billie-eilish-wish-you-were-gay-lyrics",
+                    "pyongs_count": 216,
+                    "song_art_image_thumbnail_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.300x300x1.jpg",
+                    "song_art_image_url": "https://images.genius.com/e50e95a1286ecc3423e5173836ba6985.1000x1000x1.jpg",
+                    "stats": {
+                        "unreviewed_annotations": 0,
+                        "hot": false,
+                        "pageviews": 1505480
+                    },
+                    "title": "​wish you were gay",
+                    "title_with_featured": "​wish you were gay",
+                    "url": "https://genius.com/Billie-eilish-wish-you-were-gay-lyrics",
+                    "primary_artist": {
+                        "api_path": "/artists/615550",
+                        "header_image_url": "https://images.genius.com/b6590367f333ba5d5993d8e3ca945cf0.1000x333x1.jpg",
+                        "id": 615550,
+                        "image_url": "https://images.genius.com/248201901e5ec95e885889363b175458.640x640x1.jpg",
+                        "is_meme_verified": false,
+                        "is_verified": true,
+                        "name": "Billie Eilish",
+                        "url": "https://genius.com/artists/Billie-eilish",
+                        "iq": 6436
+                    }
+                }
+            }
+        ]
+    }
+}

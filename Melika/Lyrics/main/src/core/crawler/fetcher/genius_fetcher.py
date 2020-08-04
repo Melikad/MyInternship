@@ -35,7 +35,7 @@ class GeniusFetcher(Fetcher):
         return self._get(request)
 
     def fetch_search_results(self, query: str) -> Response:
-        request = Request('GET', url=self.website_url + 'search/multi', params={'q': query})
+        request = Request('GET', url=self.api_url + 'search', params={'q': query})
         return self._get(request)
 
     def fetch_artist_songs(self, artist_id: str, sort = 'title', per_page: int = 20, page: int = 1) -> Response:
