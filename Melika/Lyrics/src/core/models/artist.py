@@ -1,6 +1,7 @@
 # Internal
 from Melika.Lyrics.src.utils.string_utils import SlotString
 
+
 class Artist(SlotString):
     
     __slots__ = 'id', 'name'
