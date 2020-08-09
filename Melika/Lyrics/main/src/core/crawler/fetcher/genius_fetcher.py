@@ -31,6 +31,7 @@ class GeniusFetcher(Fetcher):
         self.session = session
     
     def fetch_song(self, song_id: str) -> Response:
+        print('search song *******************')
         request = Request('GET', url=self.api_url + f'songs/{song_id}')
         return self._get(request)
 
@@ -55,4 +56,9 @@ class GeniusFetcher(Fetcher):
             'GET',
              url = self.website_url + url
         )
+        return self._get(request)
+
+
+    def fetch_artist_id(self, name: str) -> str:
+        request = Request('GET', url=self.api_url + 'search', params={'q': name})
         return self._get(request)
