@@ -1,5 +1,5 @@
 # Internal
-from Melika.Lyrics.src.utils.string_utils import SlotString
+from Melika.Lyrics.main.src.utils.string_utils import SlotString
 
 
 class Artist(SlotString):
@@ -13,7 +13,7 @@ class Artist(SlotString):
     def __hash__(self):
         return hash(self.id)
 
-    def __eq__(self, other: Artist):
+    def __eq__(self, other):
         return (
             self.__class__ == other.__class__ and
             self.id == other.id
