@@ -1,5 +1,5 @@
 # Standard Library
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 from typing import Union
 from time import sleep as time_sleep
 
@@ -20,25 +20,22 @@ class Fetcher(ABC):
         self.failed_sleep_time = failed_sleep_time
         self.timeout = timeout
 
-    @abstractclassmethod
+    @abstractmethod
     def _init_session(self) -> None:
         pass
 
-    def _send_request(self, request: Request) -> Response:
-        response: Response = self.session.send(request)
-        if response.status_code == 200:
-            return response
-        print(response.text)
-        raise HTTPError('Bad Request!')
-
-    def _get(self, request: Request) -> Response:
-        request.params.update({'text_format': 'plain'})
+    def _fetch(self, request: Request) -> Response:
+        request.headers = self.session.headers
+        prepared_request = request.prepare()
+        # request.params.update({'text_format': 'plain'})
         for attempt in range(self.max_attempts):
             try:
-                response = self.session.request('GET', request.url, timeout=self.timeout, params=request.params)
+                response = self.session.send(prepared_request, verify=False, timeout = self.timeout)
                 if response.status_code == 200:
                     return response
-                raise HTTPError(f'Bad Request {response.status_code}');
+                print(response.text)
+                raise HTTPError(f'Bad Request {response.status_code}')
+            
             except (Timeout, ConnectionError, HTTPError) as error:
-                print(f'{type(error)}}!')
+                print(f'{type(error)}!')
                 time_sleep(self.failed_sleep_time)

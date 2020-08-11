@@ -16,7 +16,8 @@ def parse_song(response : Response) -> Song:
         data['annotation_count']
     )
 
-def parse_search_result_songs(response: Response) -> List[Song]:
+
+def parse_songs_of_search_result(response: Response) -> List[Song]:
     data = response.json()['response']['hits']
     songs = []
     for item in data:
@@ -34,8 +35,8 @@ def parse_search_result_songs(response: Response) -> List[Song]:
             )
     return songs
 
-    
-def parse_search_artist(response: Response) -> str:
+
+def parse_primary_artist_of_search_result(response: Response) -> Artist:
     return response.json()['response']['hits']['results']['primary_artist']['id'] # ??????????????????????? to do
 
 
@@ -58,9 +59,21 @@ def parse_search_result_artists(response: Response) -> List[Artist]:
             itemArtists = splitArtists(artistName)
             for artist in itemArtists:
                 artists.add(
-                    Artist(
-                        parse_search_artist(fetch_artist_by_id(artist.strip())),
-                        artist
-                    )
+                    parse_primary_artist_of_search_result(fetch_artist_by_id(artist.strip())),
                 )
-    return artists
+    return list(artists)
+
+
+def _clean_lyrics(lyrics: str) -> str:
+    lyrics = re.sub(r'<(\"[^\"]*\"|\'[^\']*\'|[^\'\">])*>', '', lyrics)
+    lyrics = re.sub(r'\[.+?\]', '', lyrics)
+    lyrics = re.sub(r'\(.+?\)', '', lyrics)
+    lyrics = re.sub(r'[\'\"?.!:,]', '', lyrics)
+    return lyrics.strip()
+
+        
+def parse_lyrics(response: Response) -> str:
+    soup = BeautifulSoup(response.text, 'html.parser')
+    content = soup.find('html').find('head').find_all('meta')[25].get('content')
+    lyrics = json.loads(content)['lyrics_data']['body']['html']
+    return _clean_lyrics(lyrics)
