@@ -1,6 +1,6 @@
 # Internal
-from Melika.Lyrics.src.utils.string_utils import SlotString
-from Melika.Lyrics.src.core.models.artist import Artist
+from Melika.Lyrics.main.src.utils.string_utils import SlotString
+from Melika.Lyrics.main.src.core.models.artist import Artist
 
 
 class Song(SlotString):

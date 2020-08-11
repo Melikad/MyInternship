@@ -2,6 +2,8 @@ from requests import Response
 from typing import List
 
 from Melika.Lyrics.main.src.core.models.song import Song
+from Melika.Lyrics.main.src.core.models.artist import Artist
+
 
 def parse_song(response : Response) -> Song:
     data = response.json()['response']['song']
@@ -62,4 +64,3 @@ def parse_search_result_artists(response: Response) -> List[Artist]:
                     )
                 )
     return artists
-

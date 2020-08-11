@@ -35,17 +35,10 @@ class Fetcher(ABC):
         request.params.update({'text_format': 'plain'})
         for attempt in range(self.max_attempts):
             try:
-                return self.session.request(
-                    'GET',
-                    request.url,
-                    timeout=self.timeout,
-                    params=request.params
-                )
-            except Timeout:
-                time_sleep(self.failed_sleep_time)
-            except ConnectionError:
-                print('Net Qate!')
-                time_sleep(self.failed_sleep_time)
-            except HTTPError:
-                print('Bad Request!')
+                response = self.session.request('GET', request.url, timeout=self.timeout, params=request.params)
+                if response.status_code == 200:
+                    return response
+                raise HTTPError(f'Bad Request {response.status_code}');
+            except (Timeout, ConnectionError, HTTPError) as error:
+                print(f'{type(error)}}!')
                 time_sleep(self.failed_sleep_time)
