@@ -40,5 +40,5 @@ class Fetcher(ABC):
                     return response
                 raise HTTPError(f'Bad Request {response.status_code}');
             except (Timeout, ConnectionError, HTTPError) as error:
-                print(f'{type(error)}}!')
+                print(f'{type(error)}!')
                 time_sleep(self.failed_sleep_time)

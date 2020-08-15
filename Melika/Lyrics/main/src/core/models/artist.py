@@ -1,20 +1,11 @@
 # Internal
-from Melika.Lyrics.main.src.utils.string_utils import SlotString
+from Melika.Lyrics.main.src.core.models.model import Model
 
 
-class Artist(SlotString):
+class Artist(Model):
     
     __slots__ = 'id', 'name'
 
     def __init__(self, id_: str, name: str):
-        self.id = id_
+        super().__init__(id_)
         self.name = name
-
-    def __hash__(self):
-        return hash(self.id)
-
-    def __eq__(self, other):
-        return (
-            self.__class__ == other.__class__ and
-            self.id == other.id
-        )
