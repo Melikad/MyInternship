@@ -1,2 +1,0 @@
-import mariadb
-import sys

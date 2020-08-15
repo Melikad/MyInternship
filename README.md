@@ -1,2 +1,0 @@
-# MyInternship
-^_____^
