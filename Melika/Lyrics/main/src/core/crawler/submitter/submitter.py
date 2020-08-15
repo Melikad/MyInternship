@@ -10,7 +10,7 @@ from Melika.Lyrics.main.src.core.models.model import Model
 class Submitter(ABC):
 
     @abstractmethod
-    def submit(table:str, model_collection: Set[Model]) -> None:
+    def submit(self, table: str, model_collection: Set[Model]) -> None:
         pass
 
 
@@ -52,7 +52,9 @@ class SqliteSubmitter(SqlDataBaseSubmitter, ABC):
                 f'VALUES {values};'
         return query
     
-    def submit(self, table: str, model_collection: Set[Model]) -> None:
+    def submit(self, table: str, model_collection: Set[Model], commit: bool = True) -> None:
         query = self._build_insert_query(table, model_collection)
         self._connection.execute(query)
-        self._connection.commit()
+        if commit:
+            self._connection.commit()
+
