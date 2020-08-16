@@ -25,12 +25,13 @@ class Fetcher(ABC):
         pass
 
     def _fetch(self, request: Request) -> Response:
+        print(f'Requesting [{request.method}] : {request.url}')
         request.headers = self.session.headers
         prepared_request = request.prepare()
         # request.params.update({'text_format': 'plain'})
         for attempt in range(self.max_attempts):
             try:
-                response = self.session.send(prepared_request, verify=False, timeout = self.timeout)
+                response = self.session.send(prepared_request, timeout = self.timeout)
                 if response.status_code == 200:
                     return response
                 print(response.text)

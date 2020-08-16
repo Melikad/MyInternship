@@ -25,12 +25,31 @@ def parse_song(response : Response) -> Song:
     )
 
 
+def parse_artist_songs(response: Response) -> List[Song]:
+    """
+        @param response: fetch_artist_songs response
+    """
+    data = response.json()['response']['songs']
+    songs = {
+        Song(
+            song['id'],
+            song['title'],
+            song['url'],
+            int(song['stats']['pageviews']) if 'stats' in song and 'pageviews' in song['stats'] else None,
+            None,
+            int(song['annotation_count']),
+        )
+        for song in data
+    }
+    return list(songs)
+
+
 def parse_search_results_songs(response: Response) -> List[Song]:
     """
         @param response: fetch_search_results response
     """
     data = response.json()['response']['hits']
-    songs = []
+    songs = set()
     for item in data:
         if item['type'] == 'song':
             item = item['result']
@@ -44,7 +63,7 @@ def parse_search_results_songs(response: Response) -> List[Song]:
                     item['annotation_count']
                 )
             )
-    return songs
+    return list(songs)
 
 
 def parse_artist_id(response: Response) -> str:
@@ -59,16 +78,15 @@ def parse_search_result_artists(response: Response) -> List[Artist]:
         @param response: fetch_search_results response
     """
     data = response.json()['response']['hits']
-    artists = set()
-    for item in data:
-        if data['type'] == 'song':
-            artists.add(
-                Artist(
-                    data['results']['primary_artist']['id'],
-                    data['results']['primary_artist']['name']
-                )
-            )
-    return artists
+    artists = {
+        Artist(
+            item['result']['primary_artist']['id'],
+            item['result']['primary_artist']['name']
+        )
+        for item in data
+        if item['type'] == 'song'
+    }
+    return list(artists)
 
 
 def _clean_lyrics(lyrics: str) -> str:

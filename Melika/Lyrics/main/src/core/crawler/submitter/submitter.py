@@ -23,14 +23,17 @@ class SqlDataBaseSubmitter(Submitter, ABC):
         pass
 
 
-class SqliteSubmitter(SqlDataBaseSubmitter, ABC):
+class SqliteSubmitter(SqlDataBaseSubmitter):
         
     def __init__(self, db_url: str):
         self._url = db_url
         self._connection = SqliteConnection(db_url)
+        print('[Submitter] Init')
     
     @staticmethod
-    def _to_str(value: Union[float, int, str]):
+    def _to_str(value: Union[float, int, str, None]):
+        if value is None:
+            return '""'
         if type(value) is float:
             return str(value)
         if type(value) is int:

@@ -31,16 +31,21 @@ class GeniusFetcher(Fetcher):
         }
         self.session = session
 
+    # Tested
     def fetch_song(self, song_id: str) -> Response:
+        print(f'Fetching song: id={song_id}')
         request = Request('GET', url=self.api_url + f'songs/{song_id}')
         return self._fetch(request)
 
+    # Tested
     def fetch_search_results(self, query: str) -> Response:
-        print(f'Fetching Search Results : ({query})')
+        print(f'Fetching Search Results: query={query}')
         request = Request('GET', url=self.api_url + 'search', params={'q': query})
         return self._fetch(request)
 
+    # Tested
     def fetch_artist_songs(self, artist_id: str, sort = 'title', per_page: int = 20, page: int = 1) -> Response:
+        print(f'Fetching Artist Songs: id={artist_id}')
         print(f'Fetching Songs of Artist : ({artist_id})')
         request = Request(
             'GET',
@@ -53,10 +58,10 @@ class GeniusFetcher(Fetcher):
         )
         return self._fetch(request)
 
+    # Tested
     def fetch_song_lyrics(self, url: str) -> Response:
-        print(f'Fetching lyrics of Song : ({url.split("/")[-1]})')
         request = Request(
             'GET',
-             url = self.website_url + url
+            url = self.website_url + url
         )
         return self._fetch(request)
